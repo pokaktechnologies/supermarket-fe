@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:supermarket/core/utils/assets.dart';
 
-class Signup extends StatefulWidget {
-  const Signup({super.key});
+class Signup extends StatelessWidget {
 
-  @override
-  State<Signup> createState() => _SignupState();
-}
+   Signup({super.key});
 
-class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+      Size size = MediaQuery.of(context).size;
+    return ( Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("welcome",style: TextStyle(),),
+          Image.asset(AppAssets.sign),
+        ],
+      )
+    );
   }
 }
